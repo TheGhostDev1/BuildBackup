@@ -51,8 +51,9 @@ namespace BuildBackup
             cdn.cacheDir = SettingsManager.cacheDir;
             cdn.client = new HttpClient();
             cdn.client.Timeout = new TimeSpan(0, 5, 0);
-            cdn.cdnList = new List<string> {
+            cdn.cdnList = new List<string> {                
                 "blzddist1-a.akamaihd.net", // Akamai first
+                "archive.wow.tools", // WoW.tools Archive
                 //"level3.blizzard.com",      // Level3
                 //"us.cdn.blizzard.com",      // Official US CDN
                 //"eu.cdn.blizzard.com",      // Official EU CDN
